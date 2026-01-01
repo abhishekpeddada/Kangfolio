@@ -439,7 +439,7 @@ export default function Navbar() {
               </NavLink>
             ))}
             <ResumeButton
-              href="https://www.overleaf.com/download/project/6512ed178ebbbfffa8991cb3/build/19b7804161d-de21d2800f4b3d21/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-c3d-d-f-gbhl&enable_pdf_caching=true&popupDownload=true"
+              href="https://drive.google.com/file/d/13JvQJwCH2ubIHFh2XAmhTwzzGFr3Dnw6/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -480,7 +480,7 @@ export default function Navbar() {
                 </NavLink>
               ))}
               <ResumeButton
-                href="https://www.overleaf.com/download/project/6512ed178ebbbfffa8991cb3/build/19b7804161d-de21d2800f4b3d21/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-c3d-d-f-gbhl&enable_pdf_caching=true&popupDownload=true"
+                href="https://drive.google.com/file/d/13JvQJwCH2ubIHFh2XAmhTwzzGFr3Dnw6/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
