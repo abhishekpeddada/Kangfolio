@@ -213,14 +213,22 @@ const TechStackSection = styled(motion.div)`
 `;
 
 const TechGrid = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 24px;
   margin-top: 24px;
 
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -228,9 +236,6 @@ const TechCategory = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
-  flex: 1;
-  min-width: 240px;
-  max-width: 280px;
 `;
 
 const CategoryTitle = styled.h4`
@@ -326,11 +331,11 @@ const StatLabel = styled.div`
 `;
 
 const techStack = {
-  'Cloud & Infrastructure': ['AWS Lambda', 'S3', 'DynamoDB', 'Aurora', 'CloudFront', 'Cognito', 'CloudWatch'],
-  'Backend & Languages': ['Go', 'Java', 'Node.js', 'Python', 'SQL', 'REST APIs'],
-  'Frontend & Mobile': ['React', 'Flutter', 'JavaScript', 'HTML/CSS'],
-  'Systems & DevOps': ['Linux', 'Arch', 'Bash', 'Docker', 'SystemD', 'Git'],
-  'Android Development': ['AOSP', 'Custom ROMs', 'ADB', 'Java', 'Android SDK']
+  'Security Tools': ['Google Chronicle', 'Netenrich RI', 'Wireshark', 'OpsRamp', 'MITRE ATT&CK'],
+  'Scripting & Automation': ['Python', 'Shell Scripting', 'Bash', 'SQL'],
+  'Cloud Security': ['AWS', 'GCP', 'Azure'],
+  'OS & Networking': ['Linux Log Analysis', 'Windows Log Analysis', 'TCP/IP', 'DNS', 'VPN', 'HTTP/S'],
+  'Development': ['Flutter', 'Dart', 'React', 'JavaScript', 'Node.js']
 };
 
 export default function About() {
@@ -351,7 +356,7 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Backend Engineer • Cloud Architect • Open Source Contributor
+          SOC Analyst • Cybersecurity Engineer • Threat Hunter
         </Subtitle>
 
         <StatsBar
@@ -361,20 +366,20 @@ export default function About() {
           viewport={{ once: true }}
         >
           <StatCard whileHover={{ y: -4 }}>
-            <StatNumber>10+</StatNumber>
-            <StatLabel>Years Linux</StatLabel>
+            <StatNumber>1+</StatNumber>
+            <StatLabel>Years SOC</StatLabel>
           </StatCard>
           <StatCard whileHover={{ y: -4 }}>
-            <StatNumber>5+</StatNumber>
-            <StatLabel>Years ROM Dev</StatLabel>
+            <StatNumber>3+</StatNumber>
+            <StatLabel>Security Projects</StatLabel>
           </StatCard>
           <StatCard whileHover={{ y: -4 }}>
-            <StatNumber>100+</StatNumber>
-            <StatLabel>ROMs Released</StatLabel>
+            <StatNumber>6+</StatNumber>
+            <StatLabel>Certifications</StatLabel>
           </StatCard>
           <StatCard whileHover={{ y: -4 }}>
-            <StatNumber>2017</StatNumber>
-            <StatLabel>Started Coding</StatLabel>
+            <StatNumber>2019</StatNumber>
+            <StatLabel>Started Journey</StatLabel>
           </StatCard>
         </StatsBar>
       </Header>
@@ -390,19 +395,19 @@ export default function About() {
           <InfoGrid>
             <InfoRow>
               <InfoLabel>Position:</InfoLabel>
-              <InfoValue><HighlightText>Backend Engineer</HighlightText></InfoValue>
+              <InfoValue><HighlightText>SOC Analyst</HighlightText> at Netenrich</InfoValue>
             </InfoRow>
             <InfoRow>
               <InfoLabel>Focus:</InfoLabel>
-              <InfoValue>Cloud infrastructure & serverless architecture</InfoValue>
+              <InfoValue>Security monitoring, threat detection, incident response</InfoValue>
             </InfoRow>
             <InfoRow>
               <InfoLabel>Primary Stack:</InfoLabel>
-              <InfoValue>Go, AWS (Lambda, DynamoDB, Aurora, S3, CloudFront, Cognito)</InfoValue>
+              <InfoValue>Chronicle, Netenrich RI, OpsRamp, AWS, Python</InfoValue>
             </InfoRow>
             <InfoRow>
               <InfoLabel>Responsibilities:</InfoLabel>
-              <InfoValue>Building scalable APIs, managing production cloud services, system architecture</InfoValue>
+              <InfoValue>Monitoring security events, investigating incidents, tuning SIEM rules, automating SOAR with Python</InfoValue>
             </InfoRow>
           </InfoGrid>
         </Card>
@@ -417,19 +422,19 @@ export default function About() {
           <InfoGrid>
             <InfoRow>
               <InfoLabel>Experience:</InfoLabel>
-              <InfoValue>Backend development, cloud engineering, system administration</InfoValue>
+              <InfoValue>SOC operations, threat hunting, log analysis, cloud security</InfoValue>
+            </InfoRow>
+            <InfoRow>
+              <InfoLabel>Education:</InfoLabel>
+              <InfoValue><HighlightText>BTech in Computer Science</HighlightText> - SRKR Engineering College (2019-2023)</InfoValue>
             </InfoRow>
             <InfoRow>
               <InfoLabel>Specialization:</InfoLabel>
-              <InfoValue><HighlightText>Serverless architecture</HighlightText>, API design, cloud-native development</InfoValue>
-            </InfoRow>
-            <InfoRow>
-              <InfoLabel>Open Source:</InfoLabel>
-              <InfoValue>Active Android ROM developer, 100+ public releases, AOSP contributions</InfoValue>
+              <InfoValue><HighlightText>SIEM & Detection Engineering</HighlightText>, threat analysis, cloud security</InfoValue>
             </InfoRow>
             <InfoRow>
               <InfoLabel>Interests:</InfoLabel>
-              <InfoValue>System architecture, automation, Linux internals, performance optimization</InfoValue>
+              <InfoValue>Cybersecurity, algorithmic problem-solving, playing chess</InfoValue>
             </InfoRow>
           </InfoGrid>
         </Card>

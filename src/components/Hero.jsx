@@ -399,11 +399,11 @@ const SocialLink = styled(motion.a)`
 `;
 
 const roles = [
-  "Cloud Engineer",
-  "Backend Developer",
-  "ROM Developer",
-  "Linux Enthusiast",
-  "Tech Explorer"
+  "SOC Analyst",
+  "Cybersecurity Engineer",
+  "Threat Hunter",
+  "Python Developer",
+  "Security Enthusiast"
 ];
 
 export default function Hero() {
@@ -445,7 +445,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
         <TitleBar>
-          <span>amrutesh@portfolio:~$</span>
+          <span>abhishek@portfolio:~$</span>
           <WindowControls>
             <WindowButton
               color="#ff5f56"
@@ -478,7 +478,7 @@ export default function Hero() {
           <LeftSection>
             <ProfileImage
               src={profileImage}
-              alt="Amrutesh Naregal"
+              alt="Abhishek Peddada"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
               draggable="false"
@@ -491,7 +491,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              Amrutesh Naregal
+              Abhishek Peddada
             </Name>
 
             <TypewriterContainer>
@@ -504,7 +504,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Just a guy who likes to code and build things. Loves to Tinker with Android. Gamer4life. Arch Linux User.
+              Cybersecurity engineer with SOC experience, hands-on detection skills, and a passion for threat analysis. Eager to contribute and grow in a collaborative environment.
             </Bio>
 
             <SocialLinks
@@ -513,7 +513,7 @@ export default function Hero() {
               transition={{ delay: 0.5 }}
             >
               <SocialLink
-                href="https://github.com/DragonEmperor9480"
+                href="https://github.com/abhishekpeddada"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileTap={{ scale: 0.95 }}
@@ -522,11 +522,11 @@ export default function Hero() {
                   <i className="fab fa-github"></i>
                 </span>
                 <span className="platform-name">GitHub</span>
-                <span className="username">DragonEmperor9480</span>
+                <span className="username">abhishekpeddada</span>
               </SocialLink>
 
               <SocialLink
-                href="https://www.linkedin.com/in/amrutesh-naregal"
+                href="https://www.linkedin.com/in/abhishekpeddada"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileTap={{ scale: 0.95 }}
@@ -535,31 +535,31 @@ export default function Hero() {
                   <i className="fab fa-linkedin-in"></i>
                 </span>
                 <span className="platform-name">LinkedIn</span>
-                <span className="username">amrutesh-naregal</span>
+                <span className="username">abhishekpeddada</span>
               </SocialLink>
 
               <SocialLink
-                href="mailto:amruteshnaregal1234@gmail.com"
+                href="mailto:abhishekpeddada@gmail.com"
                 whileTap={{ scale: 0.95 }}
               >
                 <span className="icon">
                   <i className="fas fa-envelope"></i>
                 </span>
                 <span className="platform-name">Email</span>
-                <span className="username">amruteshnaregal1234@gmail.com</span>
+                <span className="username">abhishekpeddada@gmail.com</span>
               </SocialLink>
 
               <SocialLink
-                href="https://t.me/Kamisato_Amrut"
+                href="https://auth.geeksforgeeks.org/user/abhishekpeddada/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileTap={{ scale: 0.95 }}
               >
                 <span className="icon">
-                  <i className="fab fa-telegram-plane"></i>
+                  <i className="fas fa-code"></i>
                 </span>
-                <span className="platform-name">Telegram</span>
-                <span className="username">@Kamisato_Amrut</span>
+                <span className="platform-name">GeeksForGeeks</span>
+                <span className="username">abhishekpeddada</span>
               </SocialLink>
             </SocialLinks>
           </RightSection>

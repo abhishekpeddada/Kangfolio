@@ -449,9 +449,12 @@ const CertificateImageContainer = styled.div`
   align-items: center;
   margin-bottom: 16px;
   width: 100%;
+  min-height: 400px;
   position: relative;
   left: 0;
   right: 0;
+  padding: 20px;
+  box-sizing: border-box;
 `;
 
 const shimmer = keyframes`
@@ -513,9 +516,11 @@ const ImageSkeleton = styled.div`
 `;
 
 const CertificateImage = styled.img`
-  width: 100%;
-  max-width: 900px;
+  max-width: 100%;
+  max-height: 600px;
+  width: auto;
   height: auto;
+  object-fit: contain;
   border-radius: 12px;
   border: 1px solid ${({ theme }) => theme.colors.border};
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -523,11 +528,12 @@ const CertificateImage = styled.img`
   transition: opacity 0.3s ease-in;
 
   @media (max-width: 768px) {
-    max-width: 100%;
+    max-height: 400px;
     border-radius: 8px;
   }
 
   @media (max-width: 480px) {
+    max-height: 300px;
     border-radius: 6px;
   }
 `;
@@ -598,7 +604,7 @@ export default function Certifications() {
     e.stopPropagation();
     const newTabs = openTabs.filter(tab => tab.id !== tabId);
     setOpenTabs(newTabs);
-    
+
     if (activeTab === tabId) {
       setActiveTab(newTabs.length > 0 ? newTabs[newTabs.length - 1].id : null);
     }
@@ -608,11 +614,11 @@ export default function Certifications() {
   const handleTabBarScroll = (e) => {
     const tabBar = e.currentTarget;
     const hasHorizontalScroll = tabBar.scrollWidth > tabBar.clientWidth;
-    
+
     // Always prevent default when over tab bar to stop website scrolling
     e.preventDefault();
     e.stopPropagation();
-    
+
     // Only actually scroll the tabs if there's overflow
     if (hasHorizontalScroll) {
       const scrollAmount = e.deltaY * 0.5; // Reduce scroll sensitivity
@@ -639,7 +645,7 @@ export default function Certifications() {
           <WindowTitle>Certifications - Visual Studio Code</WindowTitle>
           <div style={{ width: '60px' }}></div>
         </TitleBar>
-        
+
         <MainContent>
           <Sidebar>
             <SidebarHeader>
@@ -712,12 +718,12 @@ export default function Certifications() {
                       </button>
                     </ActionButtons>
                   </PreviewHeader>
-                  
+
                   <PreviewContent>
                     <CertificateImageContainer>
                       {!imageLoaded[activeTab] && <ImageSkeleton />}
-                      <CertificateImage 
-                        src={activeCert.thumbnail} 
+                      <CertificateImage
+                        src={activeCert.thumbnail}
                         alt={activeCert.name}
                         $loaded={imageLoaded[activeTab]}
                         onLoad={() => handleImageLoad(activeTab)}
@@ -731,7 +737,7 @@ export default function Certifications() {
                   <i className="fas fa-certificate icon"></i>
                   <h3>Certificate Explorer</h3>
                   <p>Select a certification from the explorer to view details<br />
-                     Click on any .cert file to open it in the editor</p>
+                    Click on any .cert file to open it in the editor</p>
                 </WelcomeScreen>
               )}
             </Editor>

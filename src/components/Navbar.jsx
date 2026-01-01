@@ -393,7 +393,7 @@ export default function Navbar() {
   useEffect(() => {
     function handleClickOutside(event) {
       if (
-        menuRef.current && 
+        menuRef.current &&
         !menuRef.current.contains(event.target) &&
         !buttonRef.current.contains(event.target)
       ) {
@@ -419,7 +419,7 @@ export default function Navbar() {
     >
       <LogoSection>
         <LogoButton href="#home">
-          AN
+          AP
         </LogoButton>
         <SystemInfo>
           <StatusDot />
@@ -439,7 +439,7 @@ export default function Navbar() {
               </NavLink>
             ))}
             <ResumeButton
-              href="https://drive.google.com/file/d/1WUu8oNh8mLDHmN2Zovze9BHVIUmzldGW/view?usp=sharing"
+              href="https://www.overleaf.com/download/project/6512ed178ebbbfffa8991cb3/build/19b7804161d-de21d2800f4b3d21/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-c3d-d-f-gbhl&enable_pdf_caching=true&popupDownload=true"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -480,7 +480,7 @@ export default function Navbar() {
                 </NavLink>
               ))}
               <ResumeButton
-                href="https://drive.google.com/file/d/1LwmxptkPOEhyIEYJOoReFBfvzcMIUHkd/view?usp=sharing"
+                href="https://www.overleaf.com/download/project/6512ed178ebbbfffa8991cb3/build/19b7804161d-de21d2800f4b3d21/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-c3d-d-f-gbhl&enable_pdf_caching=true&popupDownload=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

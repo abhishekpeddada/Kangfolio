@@ -1,85 +1,49 @@
 {
   "certificates": [
     {
-      "name": "Full Stack Development with React & Node JS",
-      "fileName": "fullstack_react_nodejs",
-      "provider": "GeeksForGeeks",
-      "duration": "10-week course",
-      "link": "https://media.geeksforgeeks.org/courses/certificates/776d7f46c2c14e8a40ac7028953b7159.pdf",
-      "icon": "fas fa-code",
-      "thumbnail": "/assets/certificates/gfg_fsd.png"
+      "name": "Google Professional Security Operations Engineer",
+      "fileName": "google_security_ops",
+      "provider": "Google Cloud",
+      "duration": "Professional Certification",
+      "link": "https://www.credly.com/badges/5f18eef4-ba2c-429a-8b46-4d671ce341c0/linked_in_profile",
+      "icon": "fab fa-google",
+      "thumbnail": "/assets/certificates/google_security_ops.png"
     },
     {
-      "name": "Docker Training Course for the Absolute Beginner",
-      "fileName": "docker_basics",
-      "provider": "KodeKloud",
-      "link": "https://learn.kodekloud.com/certificate/b96f5460-bd56-43cf-a721-40252eac3788",
-      "icon": "fab fa-docker",
-      "thumbnail": "/assets/certificates/kk_docker_basics.png"
+      "name": "AWS Certified Developer - Associate",
+      "fileName": "aws_developer_associate",
+      "provider": "Amazon Web Services",
+      "duration": "Associate Level",
+      "link": "https://www.linkedin.com/learning/certificates/093265a4a1cd367fd8e9ea4d3fbdaee36ed1e59a12ea7b56e4a84a9c4d0949f7",
+      "icon": "fab fa-aws",
+      "thumbnail": "/assets/certificates/aws_developer.png"
     },
     {
-      "name": "Docker - SWARM | SERVICES | STACKS - Hands-on",
-      "fileName": "docker_advanced",
-      "provider": "KodeKloud",
-      "link": "https://learn.kodekloud.com/certificate/8dc069e3-39cb-44eb-a306-d3017d03d996",
-      "icon": "fab fa-docker",
-      "thumbnail": "/assets/certificates/kk_docker_Advanced.png"
-    },
-    {
-      "name": "Introduction to Linux",
-      "fileName": "linux_intro",
+      "name": "Full Stack Web Development with Flask",
+      "fileName": "fullstack_flask",
       "provider": "LinkedIn Learning",
-      "link": "https://www.linkedin.com/learning/certificates/5fda272e8f080673457ef3040d44f105223752b3a553c62f21d8177a153ccf6e",
-      "icon": "fab fa-linux",
-      "thumbnail": "/assets/certificates/ll_intro_to_linux.png"
+      "duration": "Online Course",
+      "link": "https://www.linkedin.com/learning/certificates/a993432076f9171c2e112da68d90f8ee04778b5c53bcb54d503e74f997d00589",
+      "icon": "fab fa-python",
+      "thumbnail": "/assets/certificates/ll_flask_fullstack.png"
     },
     {
-      "name": "Git Essential Training: The basics",
-      "fileName": "git_essentials",
+      "name": "Learning Hadoop",
+      "fileName": "learning_hadoop",
       "provider": "LinkedIn Learning",
-      "link": "https://www.linkedin.com/learning/certificates/cbd6df75c24cfd8cbd2e84bc855ef162f9579b015ca83d1bb013df861b9da739",
-      "icon": "fab fa-git-alt",
-      "thumbnail": "/assets/certificates/ll_git_basics.png"
+      "duration": "Online Course",
+      "link": "https://www.linkedin.com/learning/certificates/b6cd5e746b26ce2c2f3eb810b80df34eb15a936704e7b2a8a33151e97983af77",
+      "icon": "fas fa-database",
+      "thumbnail": "/assets/certificates/ll_hadoop.png"
     },
     {
-      "name": "Beginning Bash scripting",
-      "fileName": "bash_scripting",
-      "provider": "Udemy",
-      "link": "https://www.udemy.com/certificate/UC-7897ac55-286d-4937-b61b-8c26865ce6d4/",
-      "icon": "fas fa-terminal",
-      "thumbnail": "/assets/certificates/ud_bash_scripting.png"
-    },
-    {
-      "name": "Java object oriented programming",
-      "fileName": "java_oop",
-      "provider": "LinkedIn Learning",
-      "link": "https://www.linkedin.com/learning/certificates/1a16ef7dcc842c979333ada4665b9a93663e55f6389f595fde142310abc7b207",
-      "icon": "fab fa-java",
-      "thumbnail": "/assets/certificates/ll_java_oop.png"
-    },
-    {
-      "name": "Cybersecurity Awareness: Cybersecurity Terminology",
-      "fileName": "cybersecurity_awareness",
-      "provider": "LinkedIn Learning",
-      "link": "https://www.linkedin.com/learning/certificates/9fc6d9864c4429978825c01869fba16396bc3a557dc08adb816668162807f728",
-      "icon": "fas fa-shield-alt",
-      "thumbnail": "/assets/certificates/ll_cybersec_Awareness.png"
-    },
-    {
-      "name": "Learning C++",
-      "fileName": "cpp_fundamentals",
-      "provider": "LinkedIn Learning",
-      "link": "https://www.linkedin.com/learning/certificates/5f28c34865cacc6e5aaf327b2130b82e179100a7812b55ddfc5dea76f4622a8f",
-      "icon": "fas fa-code",
-      "thumbnail": "/assets/certificates/ll_c++.png"
-    },
-    {
-      "name": "Fundamentals of Docker & Kubernetes",
-      "fileName": "docker_kubernetes",
-      "provider": "Scaler",
-      "link": "https://www.linkedin.com/learning/certificates/5f28c34865cacc6e5aaf327b2130b82e179100a7812b55ddfc5dea76f4622a8f",
-      "icon": "fab fa-docker",
-      "thumbnail": "/assets/certificates/scaler_fundamentals_docker_kubernetes.png"
+      "name": "Prepare for the Azure Fundamentals (AZ-900) Certification",
+      "fileName": "azure_fundamentals",
+      "provider": "LinkedIn Learning (Microsoft Press)",
+      "duration": "Certification Prep",
+      "link": "https://www.linkedin.com/learning/certificates/d2dd06577d5100e2467518c23e6330af165ef084670a5d4cf2312d68a957c4ec",
+      "icon": "fab fa-microsoft",
+      "thumbnail": "/assets/certificates/ll_azure_fundamentals.png"
     }
   ]
 }
